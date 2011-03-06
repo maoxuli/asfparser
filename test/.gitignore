@@ -1,0 +1,14 @@
+# Xcode
+xcuserdata/
+asfparser
+
+# MSVC
+*.sdf
+*.opensdf
+*.suo
+*.user
+*.sln
+*.exe
+ipch/
+Debug/
+Release/

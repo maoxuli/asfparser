@@ -1,0 +1,250 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FEFC8979166FA83000AFFBC5 /* asfobject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEFC8971166FA83000AFFBC5 /* asfobject.cpp */; };
+		FEFC897A166FA83000AFFBC5 /* asfpacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEFC8973166FA83000AFFBC5 /* asfpacket.cpp */; };
+		FEFC897B166FA83000AFFBC5 /* asfparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEFC8975166FA83000AFFBC5 /* asfparser.cpp */; };
+		FEFC897C166FA83000AFFBC5 /* asfreader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEFC8977166FA83000AFFBC5 /* asfreader.cpp */; };
+		FEFC8988166FA83000AFFBC5 /* rtppacket.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEFC8986166FA83000AFFBC5 /* rtppacket.cpp */; };
+		FEFC898B166FA83000AFFBC5 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FEFC898A166FA83000AFFBC5 /* main.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FEFC8951166FA7EE00AFFBC5 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FEFC8953166FA7EE00AFFBC5 /* asfparser */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = asfparser; sourceTree = BUILT_PRODUCTS_DIR; };
+		FEFC8971166FA83000AFFBC5 /* asfobject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = asfobject.cpp; sourceTree = "<group>"; };
+		FEFC8972166FA83000AFFBC5 /* asfobject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asfobject.h; sourceTree = "<group>"; };
+		FEFC8973166FA83000AFFBC5 /* asfpacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = asfpacket.cpp; sourceTree = "<group>"; };
+		FEFC8974166FA83000AFFBC5 /* asfpacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asfpacket.h; sourceTree = "<group>"; };
+		FEFC8975166FA83000AFFBC5 /* asfparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = asfparser.cpp; sourceTree = "<group>"; };
+		FEFC8976166FA83000AFFBC5 /* asfparser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asfparser.h; sourceTree = "<group>"; };
+		FEFC8977166FA83000AFFBC5 /* asfreader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = asfreader.cpp; sourceTree = "<group>"; };
+		FEFC8978166FA83000AFFBC5 /* asfreader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = asfreader.h; sourceTree = "<group>"; };
+		FEFC8986166FA83000AFFBC5 /* rtppacket.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rtppacket.cpp; sourceTree = "<group>"; };
+		FEFC8987166FA83000AFFBC5 /* rtppacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtppacket.h; sourceTree = "<group>"; };
+		FEFC898A166FA83000AFFBC5 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FEFC8950166FA7EE00AFFBC5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FEFC8948166FA7EE00AFFBC5 = {
+			isa = PBXGroup;
+			children = (
+				FEFC898A166FA83000AFFBC5 /* main.cpp */,
+				FEFC8970166FA83000AFFBC5 /* asfparser */,
+				FEFC8954166FA7EE00AFFBC5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FEFC8954166FA7EE00AFFBC5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FEFC8953166FA7EE00AFFBC5 /* asfparser */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FEFC8970166FA83000AFFBC5 /* asfparser */ = {
+			isa = PBXGroup;
+			children = (
+				FEFC8986166FA83000AFFBC5 /* rtppacket.cpp */,
+				FEFC8987166FA83000AFFBC5 /* rtppacket.h */,
+				FEFC8971166FA83000AFFBC5 /* asfobject.cpp */,
+				FEFC8972166FA83000AFFBC5 /* asfobject.h */,
+				FEFC8973166FA83000AFFBC5 /* asfpacket.cpp */,
+				FEFC8974166FA83000AFFBC5 /* asfpacket.h */,
+				FEFC8975166FA83000AFFBC5 /* asfparser.cpp */,
+				FEFC8976166FA83000AFFBC5 /* asfparser.h */,
+				FEFC8977166FA83000AFFBC5 /* asfreader.cpp */,
+				FEFC8978166FA83000AFFBC5 /* asfreader.h */,
+			);
+			name = asfparser;
+			path = ../asfparser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FEFC8952166FA7EE00AFFBC5 /* asfparser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FEFC895C166FA7EE00AFFBC5 /* Build configuration list for PBXNativeTarget "asfparser" */;
+			buildPhases = (
+				FEFC894F166FA7EE00AFFBC5 /* Sources */,
+				FEFC8950166FA7EE00AFFBC5 /* Frameworks */,
+				FEFC8951166FA7EE00AFFBC5 /* CopyFiles */,
+				FEFC8994166FA83000AFFBC5 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = asfparser;
+			productName = asfparser;
+			productReference = FEFC8953166FA7EE00AFFBC5 /* asfparser */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FEFC894A166FA7EE00AFFBC5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = GWU;
+			};
+			buildConfigurationList = FEFC894D166FA7EE00AFFBC5 /* Build configuration list for PBXProject "asfparser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FEFC8948166FA7EE00AFFBC5;
+			productRefGroup = FEFC8954166FA7EE00AFFBC5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FEFC8952166FA7EE00AFFBC5 /* asfparser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		FEFC8994166FA83000AFFBC5 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cp $CONFIGURATION_BUILD_DIR/$EXECUTABLE_PATH $PROJECT_DIR/$EXECUTABLE_PATH";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FEFC894F166FA7EE00AFFBC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEFC8979166FA83000AFFBC5 /* asfobject.cpp in Sources */,
+				FEFC897A166FA83000AFFBC5 /* asfpacket.cpp in Sources */,
+				FEFC897B166FA83000AFFBC5 /* asfparser.cpp in Sources */,
+				FEFC897C166FA83000AFFBC5 /* asfreader.cpp in Sources */,
+				FEFC8988166FA83000AFFBC5 /* rtppacket.cpp in Sources */,
+				FEFC898B166FA83000AFFBC5 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FEFC895A166FA7EE00AFFBC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FEFC895B166FA7EE00AFFBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FEFC895D166FA7EE00AFFBC5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = ../asfparser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FEFC895E166FA7EE00AFFBC5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				HEADER_SEARCH_PATHS = ../asfparser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FEFC894D166FA7EE00AFFBC5 /* Build configuration list for PBXProject "asfparser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFC895A166FA7EE00AFFBC5 /* Debug */,
+				FEFC895B166FA7EE00AFFBC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FEFC895C166FA7EE00AFFBC5 /* Build configuration list for PBXNativeTarget "asfparser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FEFC895D166FA7EE00AFFBC5 /* Debug */,
+				FEFC895E166FA7EE00AFFBC5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FEFC894A166FA7EE00AFFBC5 /* Project object */;
+}

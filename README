@@ -1,0 +1,16 @@
+Advanced Systems Format (formerly Advanced Streaming Format, 
+Active Streaming Format) is Microsoft's proprietary digital 
+audio/video container format, especially meant for streaming 
+media. ASF is part of the Windows Media framework. ASF media 
+files generally have file extensions of .asf or .wmv. 
+
+Code here is a parser implementation of ASF media file. The 
+lower level of the parser is to load ASF file, identify all 
+head objects, and read ASF data packets. The higher level of 
+the parser is to make SDP for the media and pack ASF data 
+packets into RTP packets, which are required for RTSP based 
+media streaming system.
+
+li@maoxuli.com
+
+
