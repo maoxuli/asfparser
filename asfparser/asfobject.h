@@ -6,6 +6,9 @@
 
 // ASF object is identified with GUID
 
+#ifdef _WIN32
+#include <guiddef.h>
+#else
 typedef struct {
 	uint32_t    Data1;
 	uint16_t	Data2;
@@ -44,6 +47,8 @@ inline bool operator!=(const GUID& guidOne, const GUID& guidTwo)
 			(guidOne.Data4[6] != guidTwo.Data4[6]) ||
 			(guidOne.Data4[7] != guidTwo.Data4[7]) );
 }
+
+#endif
 
 // GUIDs of ASF objects
 

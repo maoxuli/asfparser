@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="asfparser">
+      <UniqueIdentifier>{fe401378-df1c-4a51-a40f-4af89c91faea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\asfparser\asfobject.cpp">
+      <Filter>asfparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\asfparser\asfpacket.cpp">
+      <Filter>asfparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\asfparser\asfparser.cpp">
+      <Filter>asfparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\asfparser\asfreader.cpp">
+      <Filter>asfparser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\asfparser\rtppacket.cpp">
+      <Filter>asfparser</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\asfparser\asfobject.h">
+      <Filter>asfparser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\asfparser\asfpacket.h">
+      <Filter>asfparser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\asfparser\asfparser.h">
+      <Filter>asfparser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\asfparser\asfreader.h">
+      <Filter>asfparser</Filter>
+    </ClInclude>
+    <ClInclude Include="..\asfparser\rtppacket.h">
+      <Filter>asfparser</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -61,7 +61,7 @@ bool AsfHeadObject::Initialize()
     // ASF head objects
     
 	OBJECT * pObj;
-	for( int i = 0; i < pHead->Number_of_Header_Objects; i++ )
+	for( size_t i = 0; i < pHead->Number_of_Header_Objects; i++ )
 	{
 		pObj = (OBJECT*)pBuf;
 		if( pObj->ObjectID == FILE_PROPERTY_ID )
@@ -69,7 +69,7 @@ bool AsfHeadObject::Initialize()
 			pFile =(FILE_OBJECT*) pBuf;
 			End_Time = pFile->Play_Duration/ 10000;	//100-nanosecond   changed to ms
 			Start_Time = pFile->Preroll;			//ms
-			Duration	= End_Time - Start_Time;
+			Duration = End_Time - Start_Time;
 			Bitrate = pFile->Maximum_Bitrate;
 			PacketSize = pFile->Maximum_Data_Packet_Size;
 			assert( pFile->Maximum_Data_Packet_Size == pFile->Minimum_Data_Packet_Size );
@@ -132,7 +132,7 @@ bool AsfHeadObject::Initialize()
 
 	pBuf = Buf;
 	pBuf += sizeof( HEAD_OBJECT );
-	for( int i = 0; i < pHead->Number_of_Header_Objects; i++ )
+	for( size_t i = 0; i < pHead->Number_of_Header_Objects; i++ )
 	{
 		pObj = (OBJECT*) pBuf;
 		if( pObj ->ObjectID == EX_HEAD_OBJECT_ID )
@@ -141,7 +141,7 @@ bool AsfHeadObject::Initialize()
 
 			const uint8_t * pExBuf = pBuf + sizeof(EX_HEAD_OBJECT);
 			uint32_t exSize  = pExHead->Header_Extension_Data_Size;
-			for( int ex = 0; ex < exSize; )
+			for( size_t ex = 0; ex < exSize; )
 			{
 				OBJECT * pExObj = (OBJECT*) pExBuf;
 				if( pExObj->ObjectID == EX_STREAM_PROPERTY_ID )
@@ -158,7 +158,7 @@ bool AsfHeadObject::Initialize()
 						VideoBitrate	= pExVideoStream->Data_Bitrate;
 					}
 				}
-				ex+= pExObj->ObjectSize;
+				ex += pExObj->ObjectSize;
 				pExBuf += pExObj->ObjectSize;
 			}
 		}

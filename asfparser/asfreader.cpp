@@ -51,7 +51,7 @@ bool AsfReader::Initialize()
     }
     
     // Load AsfHeadObject
-	uint8_t * buf;
+	uint8_t* buf;
 	buf = new uint8_t[obj.ObjectSize];
 	fp.seekg( 0, std::ios::beg );
 	fp.read( (char*)buf, obj.ObjectSize );
@@ -117,8 +117,7 @@ AsfPacket* AsfReader::NextPacket()
         delete[] buf;
 		return  NULL;
 	} 
-    
-	
+   
     PacketCount++;
 	AsfPacket* packet = AsfPacket::CreatePacket( buf, HeadObj->PacketSize );
     assert(packet != NULL);

@@ -1,5 +1,11 @@
-#include "AsfParser.h"
+#include "asfparser.h"
 #include <assert.h>
+#ifdef _WIN32
+#include <winsock2.h>
+#pragma comment(lib, "ws2_32.lib")
+#else
+#include <arpa/inet.h>
+#endif
 
 AsfParser::AsfParser(const std::string& name) 
 : fileName(name)

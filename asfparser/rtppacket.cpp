@@ -1,7 +1,11 @@
 #include "rtppacket.h"
 #include <memory.h>
 #include <assert.h>
+#ifdef _WIN32
+#include <winsock2.h>
+#else
 #include <arpa/inet.h>
+#endif
 
 RtpPacket::RtpPacket(uint16_t size)
 {

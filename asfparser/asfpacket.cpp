@@ -1,6 +1,11 @@
 #include "asfpacket.h"
 #include <memory.h>
 #include <assert.h>
+#ifdef _WIN32
+#include <winsock2.h>
+#else
+#include <arpa/inet.h>
+#endif
 
 AsfPacket::AsfPacket(const uint8_t* buf, uint32_t len)
 {
